@@ -1,0 +1,436 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ProjectManagerModelStoreContainer" CdmEntityContainer="ProjectManagerEntities">
+    <EntitySetMapping Name="PJ_CLASS">
+      <EntityTypeMapping TypeName="ProjectManagerModel.PJ_CLASS">
+        <MappingFragment StoreEntitySet="PJ_CLASS">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="OBJECT_ID" ColumnName="OBJECT_ID" />
+          <ScalarProperty Name="PART_OF_OBJECT_ID" ColumnName="PART_OF_OBJECT_ID" />
+          <ScalarProperty Name="STATE_ID" ColumnName="STATE_ID" />
+          <ScalarProperty Name="START_DATE" ColumnName="START_DATE" />
+          <ScalarProperty Name="START_ID" ColumnName="START_ID" />
+          <ScalarProperty Name="START_REQ_ID" ColumnName="START_REQ_ID" />
+          <ScalarProperty Name="END_DATE" ColumnName="END_DATE" />
+          <ScalarProperty Name="END_ID" ColumnName="END_ID" />
+          <ScalarProperty Name="END_REQ_ID" ColumnName="END_REQ_ID" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="CREATE_DATE" ColumnName="CREATE_DATE" />
+          <ScalarProperty Name="CREATE_APPL_USER_ID" ColumnName="CREATE_APPL_USER_ID" />
+          <ScalarProperty Name="CREATE_APPL_USER_LBL" ColumnName="CREATE_APPL_USER_LBL" />
+          <ScalarProperty Name="CREATE_SYS_USER" ColumnName="CREATE_SYS_USER" />
+          <ScalarProperty Name="CREATE_USER_HOST" ColumnName="CREATE_USER_HOST" />
+          <ScalarProperty Name="CREATE_USER_IP_ADDR" ColumnName="CREATE_USER_IP_ADDR" />
+          <ScalarProperty Name="CREATE_OS_USER" ColumnName="CREATE_OS_USER" />
+          <ScalarProperty Name="LAST_UPDATE_DATE" ColumnName="LAST_UPDATE_DATE" />
+          <ScalarProperty Name="LAST_UPDATE_APPL_USER_ID" ColumnName="LAST_UPDATE_APPL_USER_ID" />
+          <ScalarProperty Name="LAST_UPDATE_APPL_USER_LBL" ColumnName="LAST_UPDATE_APPL_USER_LBL" />
+          <ScalarProperty Name="LAST_UPDATE_SYS_USER" ColumnName="LAST_UPDATE_SYS_USER" />
+          <ScalarProperty Name="LAST_UPDATE_USER_HOST" ColumnName="LAST_UPDATE_USER_HOST" />
+          <ScalarProperty Name="LAST_UPDATE_USER_IP_ADDR" ColumnName="LAST_UPDATE_USER_IP_ADDR" />
+          <ScalarProperty Name="LAST_UPDATE_OS_USER" ColumnName="LAST_UPDATE_OS_USER" />
+          <ScalarProperty Name="LBL" ColumnName="LBL" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="CODE" ColumnName="CODE" />
+          <ScalarProperty Name="NOTE" ColumnName="NOTE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PJ_COMP">
+      <EntityTypeMapping TypeName="ProjectManagerModel.PJ_COMP">
+        <MappingFragment StoreEntitySet="PJ_COMP">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="OBJECT_ID" ColumnName="OBJECT_ID" />
+          <ScalarProperty Name="PART_OF_OBJECT_ID" ColumnName="PART_OF_OBJECT_ID" />
+          <ScalarProperty Name="STATE_ID" ColumnName="STATE_ID" />
+          <ScalarProperty Name="START_DATE" ColumnName="START_DATE" />
+          <ScalarProperty Name="START_ID" ColumnName="START_ID" />
+          <ScalarProperty Name="START_REQ_ID" ColumnName="START_REQ_ID" />
+          <ScalarProperty Name="END_DATE" ColumnName="END_DATE" />
+          <ScalarProperty Name="END_ID" ColumnName="END_ID" />
+          <ScalarProperty Name="END_REQ_ID" ColumnName="END_REQ_ID" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="CREATE_DATE" ColumnName="CREATE_DATE" />
+          <ScalarProperty Name="CREATE_APPL_USER_ID" ColumnName="CREATE_APPL_USER_ID" />
+          <ScalarProperty Name="CREATE_APPL_USER_LBL" ColumnName="CREATE_APPL_USER_LBL" />
+          <ScalarProperty Name="CREATE_SYS_USER" ColumnName="CREATE_SYS_USER" />
+          <ScalarProperty Name="CREATE_USER_HOST" ColumnName="CREATE_USER_HOST" />
+          <ScalarProperty Name="CREATE_USER_IP_ADDR" ColumnName="CREATE_USER_IP_ADDR" />
+          <ScalarProperty Name="CREATE_OS_USER" ColumnName="CREATE_OS_USER" />
+          <ScalarProperty Name="LAST_UPDATE_DATE" ColumnName="LAST_UPDATE_DATE" />
+          <ScalarProperty Name="LAST_UPDATE_APPL_USER_ID" ColumnName="LAST_UPDATE_APPL_USER_ID" />
+          <ScalarProperty Name="LAST_UPDATE_APPL_USER_LBL" ColumnName="LAST_UPDATE_APPL_USER_LBL" />
+          <ScalarProperty Name="LAST_UPDATE_SYS_USER" ColumnName="LAST_UPDATE_SYS_USER" />
+          <ScalarProperty Name="LAST_UPDATE_USER_HOST" ColumnName="LAST_UPDATE_USER_HOST" />
+          <ScalarProperty Name="LAST_UPDATE_USER_IP_ADDR" ColumnName="LAST_UPDATE_USER_IP_ADDR" />
+          <ScalarProperty Name="LAST_UPDATE_OS_USER" ColumnName="LAST_UPDATE_OS_USER" />
+          <ScalarProperty Name="LBL" ColumnName="LBL" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="SHORT_NAME" ColumnName="SHORT_NAME" />
+          <ScalarProperty Name="NOTE" ColumnName="NOTE" />
+          <ScalarProperty Name="GROUP_ID" ColumnName="GROUP_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PJ_CUSTOMER">
+      <EntityTypeMapping TypeName="ProjectManagerModel.PJ_CUSTOMER">
+        <MappingFragment StoreEntitySet="PJ_CUSTOMER">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="OBJECT_ID" ColumnName="OBJECT_ID" />
+          <ScalarProperty Name="PART_OF_OBJECT_ID" ColumnName="PART_OF_OBJECT_ID" />
+          <ScalarProperty Name="STATE_ID" ColumnName="STATE_ID" />
+          <ScalarProperty Name="START_DATE" ColumnName="START_DATE" />
+          <ScalarProperty Name="START_ID" ColumnName="START_ID" />
+          <ScalarProperty Name="START_REQ_ID" ColumnName="START_REQ_ID" />
+          <ScalarProperty Name="END_DATE" ColumnName="END_DATE" />
+          <ScalarProperty Name="END_ID" ColumnName="END_ID" />
+          <ScalarProperty Name="END_REQ_ID" ColumnName="END_REQ_ID" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="CREATE_DATE" ColumnName="CREATE_DATE" />
+          <ScalarProperty Name="CREATE_APPL_USER_ID" ColumnName="CREATE_APPL_USER_ID" />
+          <ScalarProperty Name="CREATE_APPL_USER_LBL" ColumnName="CREATE_APPL_USER_LBL" />
+          <ScalarProperty Name="CREATE_SYS_USER" ColumnName="CREATE_SYS_USER" />
+          <ScalarProperty Name="CREATE_USER_HOST" ColumnName="CREATE_USER_HOST" />
+          <ScalarProperty Name="CREATE_USER_IP_ADDR" ColumnName="CREATE_USER_IP_ADDR" />
+          <ScalarProperty Name="CREATE_OS_USER" ColumnName="CREATE_OS_USER" />
+          <ScalarProperty Name="LAST_UPDATE_DATE" ColumnName="LAST_UPDATE_DATE" />
+          <ScalarProperty Name="LAST_UPDATE_APPL_USER_ID" ColumnName="LAST_UPDATE_APPL_USER_ID" />
+          <ScalarProperty Name="LAST_UPDATE_APPL_USER_LBL" ColumnName="LAST_UPDATE_APPL_USER_LBL" />
+          <ScalarProperty Name="LAST_UPDATE_SYS_USER" ColumnName="LAST_UPDATE_SYS_USER" />
+          <ScalarProperty Name="LAST_UPDATE_USER_HOST" ColumnName="LAST_UPDATE_USER_HOST" />
+          <ScalarProperty Name="LAST_UPDATE_USER_IP_ADDR" ColumnName="LAST_UPDATE_USER_IP_ADDR" />
+          <ScalarProperty Name="LAST_UPDATE_OS_USER" ColumnName="LAST_UPDATE_OS_USER" />
+          <ScalarProperty Name="LBL" ColumnName="LBL" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="SHORT_NAME" ColumnName="SHORT_NAME" />
+          <ScalarProperty Name="PART_OF_ID" ColumnName="PART_OF_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PJ_EMP">
+      <EntityTypeMapping TypeName="ProjectManagerModel.PJ_EMP">
+        <MappingFragment StoreEntitySet="PJ_EMP">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="OBJECT_ID" ColumnName="OBJECT_ID" />
+          <ScalarProperty Name="PART_OF_OBJECT_ID" ColumnName="PART_OF_OBJECT_ID" />
+          <ScalarProperty Name="STATE_ID" ColumnName="STATE_ID" />
+          <ScalarProperty Name="START_DATE" ColumnName="START_DATE" />
+          <ScalarProperty Name="START_ID" ColumnName="START_ID" />
+          <ScalarProperty Name="START_REQ_ID" ColumnName="START_REQ_ID" />
+          <ScalarProperty Name="END_DATE" ColumnName="END_DATE" />
+          <ScalarProperty Name="END_ID" ColumnName="END_ID" />
+          <ScalarProperty Name="END_REQ_ID" ColumnName="END_REQ_ID" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="CREATE_DATE" ColumnName="CREATE_DATE" />
+          <ScalarProperty Name="CREATE_APPL_USER_ID" ColumnName="CREATE_APPL_USER_ID" />
+          <ScalarProperty Name="CREATE_APPL_USER_LBL" ColumnName="CREATE_APPL_USER_LBL" />
+          <ScalarProperty Name="CREATE_SYS_USER" ColumnName="CREATE_SYS_USER" />
+          <ScalarProperty Name="CREATE_USER_HOST" ColumnName="CREATE_USER_HOST" />
+          <ScalarProperty Name="CREATE_USER_IP_ADDR" ColumnName="CREATE_USER_IP_ADDR" />
+          <ScalarProperty Name="CREATE_OS_USER" ColumnName="CREATE_OS_USER" />
+          <ScalarProperty Name="LAST_UPDATE_DATE" ColumnName="LAST_UPDATE_DATE" />
+          <ScalarProperty Name="LAST_UPDATE_APPL_USER_ID" ColumnName="LAST_UPDATE_APPL_USER_ID" />
+          <ScalarProperty Name="LAST_UPDATE_APPL_USER_LBL" ColumnName="LAST_UPDATE_APPL_USER_LBL" />
+          <ScalarProperty Name="LAST_UPDATE_SYS_USER" ColumnName="LAST_UPDATE_SYS_USER" />
+          <ScalarProperty Name="LAST_UPDATE_USER_HOST" ColumnName="LAST_UPDATE_USER_HOST" />
+          <ScalarProperty Name="LAST_UPDATE_USER_IP_ADDR" ColumnName="LAST_UPDATE_USER_IP_ADDR" />
+          <ScalarProperty Name="LAST_UPDATE_OS_USER" ColumnName="LAST_UPDATE_OS_USER" />
+          <ScalarProperty Name="LBL" ColumnName="LBL" />
+          <ScalarProperty Name="ORG_ID" ColumnName="ORG_ID" />
+          <ScalarProperty Name="LAST_NAME" ColumnName="LAST_NAME" />
+          <ScalarProperty Name="FIRST_NAME" ColumnName="FIRST_NAME" />
+          <ScalarProperty Name="MID_NAME" ColumnName="MID_NAME" />
+          <ScalarProperty Name="E_MAIL" ColumnName="E_MAIL" />
+          <ScalarProperty Name="NOTE" ColumnName="NOTE" />
+          <ScalarProperty Name="BIRTHDAY" ColumnName="BIRTHDAY" />
+          <ScalarProperty Name="ACTUAL" ColumnName="ACTUAL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PJ_PROJECT">
+      <EntityTypeMapping TypeName="ProjectManagerModel.PJ_PROJECT">
+        <MappingFragment StoreEntitySet="PJ_PROJECT">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="OBJECT_ID" ColumnName="OBJECT_ID" />
+          <ScalarProperty Name="PART_OF_OBJECT_ID" ColumnName="PART_OF_OBJECT_ID" />
+          <ScalarProperty Name="STATE_ID" ColumnName="STATE_ID" />
+          <ScalarProperty Name="START_DATE_FACT" ColumnName="START_DATE_FACT" />
+          <ScalarProperty Name="START_ID" ColumnName="START_ID" />
+          <ScalarProperty Name="START_REQ_ID" ColumnName="START_REQ_ID" />
+          <ScalarProperty Name="END_DATE_FACT" ColumnName="END_DATE_FACT" />
+          <ScalarProperty Name="END_ID" ColumnName="END_ID" />
+          <ScalarProperty Name="END_REQ_ID" ColumnName="END_REQ_ID" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="CREATE_DATE" ColumnName="CREATE_DATE" />
+          <ScalarProperty Name="CREATE_APPL_USER_ID" ColumnName="CREATE_APPL_USER_ID" />
+          <ScalarProperty Name="CREATE_APPL_USER_LBL" ColumnName="CREATE_APPL_USER_LBL" />
+          <ScalarProperty Name="CREATE_SYS_USER" ColumnName="CREATE_SYS_USER" />
+          <ScalarProperty Name="CREATE_USER_HOST" ColumnName="CREATE_USER_HOST" />
+          <ScalarProperty Name="CREATE_USER_IP_ADDR" ColumnName="CREATE_USER_IP_ADDR" />
+          <ScalarProperty Name="CREATE_OS_USER" ColumnName="CREATE_OS_USER" />
+          <ScalarProperty Name="LAST_UPDATE_DATE" ColumnName="LAST_UPDATE_DATE" />
+          <ScalarProperty Name="LAST_UPDATE_APPL_USER_ID" ColumnName="LAST_UPDATE_APPL_USER_ID" />
+          <ScalarProperty Name="LAST_UPDATE_APPL_USER_LBL" ColumnName="LAST_UPDATE_APPL_USER_LBL" />
+          <ScalarProperty Name="LAST_UPDATE_SYS_USER" ColumnName="LAST_UPDATE_SYS_USER" />
+          <ScalarProperty Name="LAST_UPDATE_USER_HOST" ColumnName="LAST_UPDATE_USER_HOST" />
+          <ScalarProperty Name="LAST_UPDATE_USER_IP_ADDR" ColumnName="LAST_UPDATE_USER_IP_ADDR" />
+          <ScalarProperty Name="LAST_UPDATE_OS_USER" ColumnName="LAST_UPDATE_OS_USER" />
+          <ScalarProperty Name="LBL" ColumnName="LBL" />
+          <ScalarProperty Name="CLASS_ID" ColumnName="CLASS_ID" />
+          <ScalarProperty Name="CUST_ID" ColumnName="CUST_ID" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="SHORT_NAME" ColumnName="SHORT_NAME" />
+          <ScalarProperty Name="MAN_ID" ColumnName="MAN_ID" />
+          <ScalarProperty Name="NOTE" ColumnName="NOTE" />
+          <ScalarProperty Name="WORK_DAYS_FACT" ColumnName="WORK_DAYS_FACT" />
+          <ScalarProperty Name="PART_OF_ID" ColumnName="PART_OF_ID" />
+          <ScalarProperty Name="START_DATE" ColumnName="START_DATE" />
+          <ScalarProperty Name="END_DATE" ColumnName="END_DATE" />
+          <ScalarProperty Name="STATE_CL_ID" ColumnName="STATE_CL_ID" />
+          <ScalarProperty Name="START_DATE_PLAN" ColumnName="START_DATE_PLAN" />
+          <ScalarProperty Name="END_DATE_PLAN" ColumnName="END_DATE_PLAN" />
+          <ScalarProperty Name="WORK_DAYS_PLAN" ColumnName="WORK_DAYS_PLAN" />
+          <ScalarProperty Name="HAS_CHILDREN" ColumnName="HAS_CHILDREN" />
+          <ScalarProperty Name="DURATION_PLAN" ColumnName="DURATION_PLAN" />
+          <ScalarProperty Name="DURATION_FACT" ColumnName="DURATION_FACT" />
+          <ScalarProperty Name="AUTHOR_ID" ColumnName="AUTHOR_ID" />
+          <ScalarProperty Name="TASK_EXEC_LAST_DATE" ColumnName="TASK_EXEC_LAST_DATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PJ_PROJECT_STATE_CL">
+      <EntityTypeMapping TypeName="ProjectManagerModel.PJ_PROJECT_STATE_CL">
+        <MappingFragment StoreEntitySet="PJ_PROJECT_STATE_CL">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="OBJECT_ID" ColumnName="OBJECT_ID" />
+          <ScalarProperty Name="PART_OF_OBJECT_ID" ColumnName="PART_OF_OBJECT_ID" />
+          <ScalarProperty Name="STATE_ID" ColumnName="STATE_ID" />
+          <ScalarProperty Name="START_DATE" ColumnName="START_DATE" />
+          <ScalarProperty Name="START_ID" ColumnName="START_ID" />
+          <ScalarProperty Name="START_REQ_ID" ColumnName="START_REQ_ID" />
+          <ScalarProperty Name="END_DATE" ColumnName="END_DATE" />
+          <ScalarProperty Name="END_ID" ColumnName="END_ID" />
+          <ScalarProperty Name="END_REQ_ID" ColumnName="END_REQ_ID" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="CREATE_DATE" ColumnName="CREATE_DATE" />
+          <ScalarProperty Name="CREATE_APPL_USER_ID" ColumnName="CREATE_APPL_USER_ID" />
+          <ScalarProperty Name="CREATE_APPL_USER_LBL" ColumnName="CREATE_APPL_USER_LBL" />
+          <ScalarProperty Name="CREATE_SYS_USER" ColumnName="CREATE_SYS_USER" />
+          <ScalarProperty Name="CREATE_USER_HOST" ColumnName="CREATE_USER_HOST" />
+          <ScalarProperty Name="CREATE_USER_IP_ADDR" ColumnName="CREATE_USER_IP_ADDR" />
+          <ScalarProperty Name="CREATE_OS_USER" ColumnName="CREATE_OS_USER" />
+          <ScalarProperty Name="LAST_UPDATE_DATE" ColumnName="LAST_UPDATE_DATE" />
+          <ScalarProperty Name="LAST_UPDATE_APPL_USER_ID" ColumnName="LAST_UPDATE_APPL_USER_ID" />
+          <ScalarProperty Name="LAST_UPDATE_APPL_USER_LBL" ColumnName="LAST_UPDATE_APPL_USER_LBL" />
+          <ScalarProperty Name="LAST_UPDATE_SYS_USER" ColumnName="LAST_UPDATE_SYS_USER" />
+          <ScalarProperty Name="LAST_UPDATE_USER_HOST" ColumnName="LAST_UPDATE_USER_HOST" />
+          <ScalarProperty Name="LAST_UPDATE_USER_IP_ADDR" ColumnName="LAST_UPDATE_USER_IP_ADDR" />
+          <ScalarProperty Name="LAST_UPDATE_OS_USER" ColumnName="LAST_UPDATE_OS_USER" />
+          <ScalarProperty Name="LBL" ColumnName="LBL" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="CODE" ColumnName="CODE" />
+          <ScalarProperty Name="NOTE" ColumnName="NOTE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PJ_TASK">
+      <EntityTypeMapping TypeName="ProjectManagerModel.PJ_TASK">
+        <MappingFragment StoreEntitySet="PJ_TASK">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="OBJECT_ID" ColumnName="OBJECT_ID" />
+          <ScalarProperty Name="PART_OF_OBJECT_ID" ColumnName="PART_OF_OBJECT_ID" />
+          <ScalarProperty Name="STATE_ID" ColumnName="STATE_ID" />
+          <ScalarProperty Name="START_DATE" ColumnName="START_DATE" />
+          <ScalarProperty Name="START_ID" ColumnName="START_ID" />
+          <ScalarProperty Name="START_REQ_ID" ColumnName="START_REQ_ID" />
+          <ScalarProperty Name="END_DATE" ColumnName="END_DATE" />
+          <ScalarProperty Name="END_ID" ColumnName="END_ID" />
+          <ScalarProperty Name="END_REQ_ID" ColumnName="END_REQ_ID" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="CREATE_DATE" ColumnName="CREATE_DATE" />
+          <ScalarProperty Name="CREATE_APPL_USER_ID" ColumnName="CREATE_APPL_USER_ID" />
+          <ScalarProperty Name="CREATE_APPL_USER_LBL" ColumnName="CREATE_APPL_USER_LBL" />
+          <ScalarProperty Name="CREATE_SYS_USER" ColumnName="CREATE_SYS_USER" />
+          <ScalarProperty Name="CREATE_USER_HOST" ColumnName="CREATE_USER_HOST" />
+          <ScalarProperty Name="CREATE_USER_IP_ADDR" ColumnName="CREATE_USER_IP_ADDR" />
+          <ScalarProperty Name="CREATE_OS_USER" ColumnName="CREATE_OS_USER" />
+          <ScalarProperty Name="LAST_UPDATE_DATE" ColumnName="LAST_UPDATE_DATE" />
+          <ScalarProperty Name="LAST_UPDATE_APPL_USER_ID" ColumnName="LAST_UPDATE_APPL_USER_ID" />
+          <ScalarProperty Name="LAST_UPDATE_APPL_USER_LBL" ColumnName="LAST_UPDATE_APPL_USER_LBL" />
+          <ScalarProperty Name="LAST_UPDATE_SYS_USER" ColumnName="LAST_UPDATE_SYS_USER" />
+          <ScalarProperty Name="LAST_UPDATE_USER_HOST" ColumnName="LAST_UPDATE_USER_HOST" />
+          <ScalarProperty Name="LAST_UPDATE_USER_IP_ADDR" ColumnName="LAST_UPDATE_USER_IP_ADDR" />
+          <ScalarProperty Name="LAST_UPDATE_OS_USER" ColumnName="LAST_UPDATE_OS_USER" />
+          <ScalarProperty Name="LBL" ColumnName="LBL" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="PJ_ID" ColumnName="PJ_ID" />
+          <ScalarProperty Name="EXEC_ID" ColumnName="EXEC_ID" />
+          <ScalarProperty Name="END_DATE_PLAN" ColumnName="END_DATE_PLAN" />
+          <ScalarProperty Name="START_DATE_FACT" ColumnName="START_DATE_FACT" />
+          <ScalarProperty Name="END_DATE_FACT" ColumnName="END_DATE_FACT" />
+          <ScalarProperty Name="STATE_CL_ID" ColumnName="STATE_CL_ID" />
+          <ScalarProperty Name="WORK_HOURS_FACT" ColumnName="WORK_HOURS_FACT" />
+          <ScalarProperty Name="NOTE" ColumnName="NOTE" />
+          <ScalarProperty Name="WORK_HOURS_PLAN" ColumnName="WORK_HOURS_PLAN" />
+          <ScalarProperty Name="PART_OF_ID" ColumnName="PART_OF_ID" />
+          <ScalarProperty Name="EXEC_COMP_ID" ColumnName="EXEC_COMP_ID" />
+          <ScalarProperty Name="IS_EXEC_MANAGER" ColumnName="IS_EXEC_MANAGER" />
+          <ScalarProperty Name="START_DATE_PLAN" ColumnName="START_DATE_PLAN" />
+          <ScalarProperty Name="CODE" ColumnName="CODE" />
+          <ScalarProperty Name="RESOURCE_MAN_ID" ColumnName="RESOURCE_MAN_ID" />
+          <ScalarProperty Name="HAS_CHILDREN" ColumnName="HAS_CHILDREN" />
+          <ScalarProperty Name="DURATION_PLAN" ColumnName="DURATION_PLAN" />
+          <ScalarProperty Name="DURATION_FACT" ColumnName="DURATION_FACT" />
+          <ScalarProperty Name="AUTHOR_ID" ColumnName="AUTHOR_ID" />
+          <ScalarProperty Name="ACCEPT_DATE_FACT" ColumnName="ACCEPT_DATE_FACT" />
+          <ScalarProperty Name="TASK_EXEC_LAST_DATE" ColumnName="TASK_EXEC_LAST_DATE" />
+          <ScalarProperty Name="REJECT_NOTES" ColumnName="REJECT_NOTES" />
+          <ScalarProperty Name="CUSTOM_CODE" ColumnName="CUSTOM_CODE" />
+          <ScalarProperty Name="ORDER_NUM" ColumnName="ORDER_NUM" />
+          <ScalarProperty Name="INTERRUPTION_DATE" ColumnName="INTERRUPTION_DATE" />
+          <ScalarProperty Name="STATE_NOTES" ColumnName="STATE_NOTES" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PJ_TASK_CLASS">
+      <EntityTypeMapping TypeName="ProjectManagerModel.PJ_TASK_CLASS">
+        <MappingFragment StoreEntitySet="PJ_TASK_CLASS">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="OBJECT_ID" ColumnName="OBJECT_ID" />
+          <ScalarProperty Name="PART_OF_OBJECT_ID" ColumnName="PART_OF_OBJECT_ID" />
+          <ScalarProperty Name="STATE_ID" ColumnName="STATE_ID" />
+          <ScalarProperty Name="START_DATE" ColumnName="START_DATE" />
+          <ScalarProperty Name="START_ID" ColumnName="START_ID" />
+          <ScalarProperty Name="START_REQ_ID" ColumnName="START_REQ_ID" />
+          <ScalarProperty Name="END_DATE" ColumnName="END_DATE" />
+          <ScalarProperty Name="END_ID" ColumnName="END_ID" />
+          <ScalarProperty Name="END_REQ_ID" ColumnName="END_REQ_ID" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="CREATE_DATE" ColumnName="CREATE_DATE" />
+          <ScalarProperty Name="CREATE_APPL_USER_ID" ColumnName="CREATE_APPL_USER_ID" />
+          <ScalarProperty Name="CREATE_APPL_USER_LBL" ColumnName="CREATE_APPL_USER_LBL" />
+          <ScalarProperty Name="CREATE_SYS_USER" ColumnName="CREATE_SYS_USER" />
+          <ScalarProperty Name="CREATE_USER_HOST" ColumnName="CREATE_USER_HOST" />
+          <ScalarProperty Name="CREATE_USER_IP_ADDR" ColumnName="CREATE_USER_IP_ADDR" />
+          <ScalarProperty Name="CREATE_OS_USER" ColumnName="CREATE_OS_USER" />
+          <ScalarProperty Name="LAST_UPDATE_DATE" ColumnName="LAST_UPDATE_DATE" />
+          <ScalarProperty Name="LAST_UPDATE_APPL_USER_ID" ColumnName="LAST_UPDATE_APPL_USER_ID" />
+          <ScalarProperty Name="LAST_UPDATE_APPL_USER_LBL" ColumnName="LAST_UPDATE_APPL_USER_LBL" />
+          <ScalarProperty Name="LAST_UPDATE_SYS_USER" ColumnName="LAST_UPDATE_SYS_USER" />
+          <ScalarProperty Name="LAST_UPDATE_USER_HOST" ColumnName="LAST_UPDATE_USER_HOST" />
+          <ScalarProperty Name="LAST_UPDATE_USER_IP_ADDR" ColumnName="LAST_UPDATE_USER_IP_ADDR" />
+          <ScalarProperty Name="LAST_UPDATE_OS_USER" ColumnName="LAST_UPDATE_OS_USER" />
+          <ScalarProperty Name="LBL" ColumnName="LBL" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="DESCR" ColumnName="DESCR" />
+          <ScalarProperty Name="PARENT_ID" ColumnName="PARENT_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PJ_TASK_COMP">
+      <EntityTypeMapping TypeName="ProjectManagerModel.PJ_TASK_COMP">
+        <MappingFragment StoreEntitySet="PJ_TASK_COMP">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="OBJECT_ID" ColumnName="OBJECT_ID" />
+          <ScalarProperty Name="PART_OF_OBJECT_ID" ColumnName="PART_OF_OBJECT_ID" />
+          <ScalarProperty Name="STATE_ID" ColumnName="STATE_ID" />
+          <ScalarProperty Name="START_DATE" ColumnName="START_DATE" />
+          <ScalarProperty Name="START_ID" ColumnName="START_ID" />
+          <ScalarProperty Name="START_REQ_ID" ColumnName="START_REQ_ID" />
+          <ScalarProperty Name="END_DATE" ColumnName="END_DATE" />
+          <ScalarProperty Name="END_ID" ColumnName="END_ID" />
+          <ScalarProperty Name="END_REQ_ID" ColumnName="END_REQ_ID" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="CREATE_DATE" ColumnName="CREATE_DATE" />
+          <ScalarProperty Name="CREATE_APPL_USER_ID" ColumnName="CREATE_APPL_USER_ID" />
+          <ScalarProperty Name="CREATE_APPL_USER_LBL" ColumnName="CREATE_APPL_USER_LBL" />
+          <ScalarProperty Name="CREATE_SYS_USER" ColumnName="CREATE_SYS_USER" />
+          <ScalarProperty Name="CREATE_USER_HOST" ColumnName="CREATE_USER_HOST" />
+          <ScalarProperty Name="CREATE_USER_IP_ADDR" ColumnName="CREATE_USER_IP_ADDR" />
+          <ScalarProperty Name="CREATE_OS_USER" ColumnName="CREATE_OS_USER" />
+          <ScalarProperty Name="LAST_UPDATE_DATE" ColumnName="LAST_UPDATE_DATE" />
+          <ScalarProperty Name="LAST_UPDATE_APPL_USER_ID" ColumnName="LAST_UPDATE_APPL_USER_ID" />
+          <ScalarProperty Name="LAST_UPDATE_APPL_USER_LBL" ColumnName="LAST_UPDATE_APPL_USER_LBL" />
+          <ScalarProperty Name="LAST_UPDATE_SYS_USER" ColumnName="LAST_UPDATE_SYS_USER" />
+          <ScalarProperty Name="LAST_UPDATE_USER_HOST" ColumnName="LAST_UPDATE_USER_HOST" />
+          <ScalarProperty Name="LAST_UPDATE_USER_IP_ADDR" ColumnName="LAST_UPDATE_USER_IP_ADDR" />
+          <ScalarProperty Name="LAST_UPDATE_OS_USER" ColumnName="LAST_UPDATE_OS_USER" />
+          <ScalarProperty Name="LBL" ColumnName="LBL" />
+          <ScalarProperty Name="TASK_ID" ColumnName="TASK_ID" />
+          <ScalarProperty Name="CLASS_ID" ColumnName="CLASS_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PJ_TASK_DEPENDENCY">
+      <EntityTypeMapping TypeName="ProjectManagerModel.PJ_TASK_DEPENDENCY">
+        <MappingFragment StoreEntitySet="PJ_TASK_DEPENDENCY">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="OBJECT_ID" ColumnName="OBJECT_ID" />
+          <ScalarProperty Name="PART_OF_OBJECT_ID" ColumnName="PART_OF_OBJECT_ID" />
+          <ScalarProperty Name="STATE_ID" ColumnName="STATE_ID" />
+          <ScalarProperty Name="START_DATE" ColumnName="START_DATE" />
+          <ScalarProperty Name="START_ID" ColumnName="START_ID" />
+          <ScalarProperty Name="START_REQ_ID" ColumnName="START_REQ_ID" />
+          <ScalarProperty Name="END_DATE" ColumnName="END_DATE" />
+          <ScalarProperty Name="END_ID" ColumnName="END_ID" />
+          <ScalarProperty Name="END_REQ_ID" ColumnName="END_REQ_ID" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="CREATE_DATE" ColumnName="CREATE_DATE" />
+          <ScalarProperty Name="CREATE_APPL_USER_ID" ColumnName="CREATE_APPL_USER_ID" />
+          <ScalarProperty Name="CREATE_APPL_USER_LBL" ColumnName="CREATE_APPL_USER_LBL" />
+          <ScalarProperty Name="CREATE_SYS_USER" ColumnName="CREATE_SYS_USER" />
+          <ScalarProperty Name="CREATE_USER_HOST" ColumnName="CREATE_USER_HOST" />
+          <ScalarProperty Name="CREATE_USER_IP_ADDR" ColumnName="CREATE_USER_IP_ADDR" />
+          <ScalarProperty Name="CREATE_OS_USER" ColumnName="CREATE_OS_USER" />
+          <ScalarProperty Name="LAST_UPDATE_DATE" ColumnName="LAST_UPDATE_DATE" />
+          <ScalarProperty Name="LAST_UPDATE_APPL_USER_ID" ColumnName="LAST_UPDATE_APPL_USER_ID" />
+          <ScalarProperty Name="LAST_UPDATE_APPL_USER_LBL" ColumnName="LAST_UPDATE_APPL_USER_LBL" />
+          <ScalarProperty Name="LAST_UPDATE_SYS_USER" ColumnName="LAST_UPDATE_SYS_USER" />
+          <ScalarProperty Name="LAST_UPDATE_USER_HOST" ColumnName="LAST_UPDATE_USER_HOST" />
+          <ScalarProperty Name="LAST_UPDATE_USER_IP_ADDR" ColumnName="LAST_UPDATE_USER_IP_ADDR" />
+          <ScalarProperty Name="LAST_UPDATE_OS_USER" ColumnName="LAST_UPDATE_OS_USER" />
+          <ScalarProperty Name="LBL" ColumnName="LBL" />
+          <ScalarProperty Name="PRED_TASK_ID" ColumnName="PRED_TASK_ID" />
+          <ScalarProperty Name="NEXT_TASK_ID" ColumnName="NEXT_TASK_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PJ_TASK_STATE_CL">
+      <EntityTypeMapping TypeName="ProjectManagerModel.PJ_TASK_STATE_CL">
+        <MappingFragment StoreEntitySet="PJ_TASK_STATE_CL">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="OBJECT_ID" ColumnName="OBJECT_ID" />
+          <ScalarProperty Name="PART_OF_OBJECT_ID" ColumnName="PART_OF_OBJECT_ID" />
+          <ScalarProperty Name="STATE_ID" ColumnName="STATE_ID" />
+          <ScalarProperty Name="START_DATE" ColumnName="START_DATE" />
+          <ScalarProperty Name="START_ID" ColumnName="START_ID" />
+          <ScalarProperty Name="START_REQ_ID" ColumnName="START_REQ_ID" />
+          <ScalarProperty Name="END_DATE" ColumnName="END_DATE" />
+          <ScalarProperty Name="END_ID" ColumnName="END_ID" />
+          <ScalarProperty Name="END_REQ_ID" ColumnName="END_REQ_ID" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="CREATE_DATE" ColumnName="CREATE_DATE" />
+          <ScalarProperty Name="CREATE_APPL_USER_ID" ColumnName="CREATE_APPL_USER_ID" />
+          <ScalarProperty Name="CREATE_APPL_USER_LBL" ColumnName="CREATE_APPL_USER_LBL" />
+          <ScalarProperty Name="CREATE_SYS_USER" ColumnName="CREATE_SYS_USER" />
+          <ScalarProperty Name="CREATE_USER_HOST" ColumnName="CREATE_USER_HOST" />
+          <ScalarProperty Name="CREATE_USER_IP_ADDR" ColumnName="CREATE_USER_IP_ADDR" />
+          <ScalarProperty Name="CREATE_OS_USER" ColumnName="CREATE_OS_USER" />
+          <ScalarProperty Name="LAST_UPDATE_DATE" ColumnName="LAST_UPDATE_DATE" />
+          <ScalarProperty Name="LAST_UPDATE_APPL_USER_ID" ColumnName="LAST_UPDATE_APPL_USER_ID" />
+          <ScalarProperty Name="LAST_UPDATE_APPL_USER_LBL" ColumnName="LAST_UPDATE_APPL_USER_LBL" />
+          <ScalarProperty Name="LAST_UPDATE_SYS_USER" ColumnName="LAST_UPDATE_SYS_USER" />
+          <ScalarProperty Name="LAST_UPDATE_USER_HOST" ColumnName="LAST_UPDATE_USER_HOST" />
+          <ScalarProperty Name="LAST_UPDATE_USER_IP_ADDR" ColumnName="LAST_UPDATE_USER_IP_ADDR" />
+          <ScalarProperty Name="LAST_UPDATE_OS_USER" ColumnName="LAST_UPDATE_OS_USER" />
+          <ScalarProperty Name="LBL" ColumnName="LBL" />
+          <ScalarProperty Name="NAME" ColumnName="NAME" />
+          <ScalarProperty Name="CODE" ColumnName="CODE" />
+          <ScalarProperty Name="NOTE" ColumnName="NOTE" />
+          <ScalarProperty Name="COLOR" ColumnName="COLOR" />
+          <ScalarProperty Name="TOOLTIP" ColumnName="TOOLTIP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

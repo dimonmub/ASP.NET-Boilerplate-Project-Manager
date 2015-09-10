@@ -1,0 +1,22 @@
+﻿<div ng-controller="app.views.task.description as vm">
+    <div><alert ng-repeat="alert in alerts" type="{{alert.type}}" close="vm.closeAlert(alert)">{{ alert.msg }}</alert></div>
+    <div>
+        <h2>@L("TaskDescription")</h2>
+    </div>
+    <p class="input-group">
+        <span class="input-group-addon" name="id" style="width: 200px; text-align: left">@L("TaskId")</span>
+        <input type="text" name="id" style="width: 600px; text-align: left" readonly="readonly" class="form-control" ng-model="vm.task.id">
+    </p>
+    <p class="input-group">
+        <span class="input-group-addon" name="name" style="width: 200px; text-align: left">@L("TaskName")</span>
+        <input type="text" name="name" style="width: 600px; text-align: left" readonly="readonly" class="form-control" ng-model="vm.task.name">
+    </p>
+    <p class="input-group">
+        <span class="input-group-addon" name="executor" style="width: 200px; text-align: left">@L("TaskExecutor")</span>
+        <input type="text" name="executor" style="width: 600px; text-align: left" readonly="readonly" class="form-control" ng-model="vm.task.description">
+    </p>
+    <p class="input-group">
+        <span class="input-group-addon" name="manager" style="width: 200px; text-align: left">@L("TaskManager")</span>
+        <input type="text" name="manager" style="width: 600px; text-align: left" readonly="readonly" class="form-control" ng-model="vm.task.note">
+    </p>
+</div>

@@ -1,0 +1,50 @@
+﻿<div ng-controller="app.views.details as vm">
+    <div><alert ng-repeat="alert in alerts" type="{{alert.type}}" close="vm.closeAlert(alert)">{{ alert.msg }}</alert></div>
+    <div>
+        <h2>@L("ProjectDetails")</h2>
+    </div>
+    <p class="input-group">
+        <span class="input-group-addon" name="id" style="width: 160px; text-align: left">@L("ProjectId")</span>
+        <input type="text" name="id" style="width: 600px; text-align: left" readonly="readonly" class="form-control" ng-model="vm.project.id">
+    </p>
+    <p class="input-group">
+        <span class="input-group-addon" name="name" style="width: 160px; text-align: left">@L("ProjectName")</span>
+        <input type="text" name="name" style="width: 600px; text-align: left" readonly="readonly" class="form-control" ng-model="vm.project.name">
+    </p>    
+    <p class="input-group">
+        <span class="input-group-addon" name="customer" style="width: 160px; text-align: left">@L("ProjectCustomer")</span>
+        <input type="text" name="customer" style="width: 600px; text-align: left" readonly="readonly" class="form-control" ng-model="vm.project.lbl">
+    </p>
+    <p class="input-group">
+        <span class="input-group-addon" name="author" style="width: 160px; text-align: left">@L("ProjectAuthor")</span>
+        <input type="text" name="author" style="width: 600px; text-align: left" readonly="readonly" class="form-control" ng-model="vm.project.description">
+    </p>
+    <p class="input-group">
+        <span class="input-group-addon" name="manager" style="width: 160px; text-align: left">@L("ProjectManager")</span>
+        <input type="text" name="manager" style="width: 600px; text-align: left" readonly="readonly" class="form-control" ng-model="vm.project.note">
+    </p>
+
+
+    <div>
+        <h2>@L("ProjectTasks")</h2>
+    </div>
+    <table class="table table-striped table-condensed table-hover">
+        <thead>
+            <tr>
+                <th></th>                
+                <th>@L("TaskId")</th>
+                <th>@L("TaskName")</th>                
+            </tr>
+        </thead>
+        <tbody>
+            <tr data ng-repeat="task in vm.tasks">   
+                <td>
+                    <a href="" ng-click="vm.taskDescription(task.id)"><i class="fa fa-pencil-square-o fa-1x-half"></i></a>
+                </td>            
+                <td ng-bind="task.id"></td>
+                <td ng-bind="task.name"></td>                
+            </tr>
+        </tbody>
+    </table>
+</div>
+

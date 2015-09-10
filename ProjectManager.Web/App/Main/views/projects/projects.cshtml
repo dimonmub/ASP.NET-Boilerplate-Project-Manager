@@ -1,0 +1,27 @@
+﻿<div ng-controller="app.views.projects as vm">   
+    <div><alert ng-repeat="alert in alerts" type="{{alert.type}}" close="vm.closeAlert(alert)">{{ alert.msg }}</alert></div>
+    <div>
+        <h2>@L("ListOfProjects")</h2>       
+    </div>
+      
+    <table class="table table-striped table-condensed table-hover">
+        <thead>
+            <tr>
+                <th></th>                
+                <th>@L("ProjectId")</th>
+                <th>@L("ProjectName")</th>
+                <th>@L("ProjectLabel")</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr data ng-repeat="project in vm.projects">       
+                <td>
+                    <a href="" ng-click="vm.details(project.id)"><i class="fa fa-pencil-square-o fa-1x-half"></i></a>
+                </td>         
+                <td ng-bind="project.id"></td>
+                <td ng-bind="project.name"></td>
+                <td ng-bind="project.lbl"></td>                
+            </tr>
+        </tbody>
+    </table>
+</div>

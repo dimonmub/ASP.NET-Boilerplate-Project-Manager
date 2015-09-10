@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="4f9fad7d96164b7d8b4a279167f8c1ca" Name="Diagram1" ZoomLevel="92">
+        <EntityTypeShape EntityType="ProjectManagerModel.PJ_CLASS" Width="1.5" PointX="10.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectManagerModel.PJ_COMP" Width="1.5" PointX="8.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectManagerModel.PJ_CUSTOMER" Width="1.5" PointX="10.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectManagerModel.PJ_EMP" Width="1.5" PointX="8.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectManagerModel.PJ_PROJECT" Width="1.5" PointX="6.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectManagerModel.PJ_PROJECT_STATE_CL" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectManagerModel.PJ_TASK" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectManagerModel.PJ_TASK_CLASS" Width="1.5" PointX="12.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectManagerModel.PJ_TASK_COMP" Width="1.5" PointX="4.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectManagerModel.PJ_TASK_DEPENDENCY" Width="1.5" PointX="12.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectManagerModel.PJ_TASK_STATE_CL" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="ProjectManagerModel.UC00038399_START_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectManagerModel.UC00038400_END_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectManagerModel.UC00038367_START_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectManagerModel.UC00038368_END_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectManagerModel.UC00038384_START_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectManagerModel.UC00038385_END_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectManagerModel.UC00038222_START_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectManagerModel.UC00038223_END_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectManagerModel.UC00038352_START_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectManagerModel.UC00038353_END_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectManagerModel.UC00038463_START_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectManagerModel.UC00038464_END_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectManagerModel.UC00038581_START_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectManagerModel.UC00038582_END_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectManagerModel.UC00038406_START_FK" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjectManagerModel.UC00038407_END_FK" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

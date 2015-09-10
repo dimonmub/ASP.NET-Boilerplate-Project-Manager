@@ -1,0 +1,724 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ProjectManagerModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="PJ_CLASS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="OBJECT_ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="PART_OF_OBJECT_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="STATE_ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="START_DATE" Type="DateTime" />
+    <Property Name="START_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="START_REQ_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="END_DATE" Type="DateTime" />
+    <Property Name="END_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="END_REQ_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_DATE" Type="DateTime" Nullable="false" />
+    <Property Name="CREATE_APPL_USER_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="CREATE_APPL_USER_LBL" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_SYS_USER" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_USER_HOST" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_USER_IP_ADDR" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_OS_USER" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_UPDATE_DATE" Type="DateTime" Nullable="false" />
+    <Property Name="LAST_UPDATE_APPL_USER_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="LAST_UPDATE_APPL_USER_LBL" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_UPDATE_SYS_USER" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_UPDATE_USER_HOST" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_UPDATE_USER_IP_ADDR" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_UPDATE_OS_USER" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="LBL" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="NAME" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="CODE" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="NOTE" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="PJ_CLASS1" Relationship="Self.UC00038399_START_FK" FromRole="PJ_CLASS" ToRole="PJ_CLASS1" />
+    <NavigationProperty Name="PJ_CLASS2" Relationship="Self.UC00038399_START_FK" FromRole="PJ_CLASS1" ToRole="PJ_CLASS" />
+    <NavigationProperty Name="PJ_CLASS11" Relationship="Self.UC00038400_END_FK" FromRole="PJ_CLASS" ToRole="PJ_CLASS1" />
+    <NavigationProperty Name="PJ_CLASS3" Relationship="Self.UC00038400_END_FK" FromRole="PJ_CLASS1" ToRole="PJ_CLASS" />
+  </EntityType>
+  <EntityType Name="PJ_COMP">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="OBJECT_ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="PART_OF_OBJECT_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="STATE_ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="START_DATE" Type="DateTime" />
+    <Property Name="START_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="START_REQ_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="END_DATE" Type="DateTime" />
+    <Property Name="END_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="END_REQ_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_DATE" Type="DateTime" Nullable="false" />
+    <Property Name="CREATE_APPL_USER_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="CREATE_APPL_USER_LBL" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_SYS_USER" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_USER_HOST" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_USER_IP_ADDR" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_OS_USER" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_UPDATE_DATE" Type="DateTime" Nullable="false" />
+    <Property Name="LAST_UPDATE_APPL_USER_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="LAST_UPDATE_APPL_USER_LBL" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_UPDATE_SYS_USER" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_UPDATE_USER_HOST" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_UPDATE_USER_IP_ADDR" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_UPDATE_OS_USER" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="LBL" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="NAME" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="SHORT_NAME" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="NOTE" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="GROUP_ID" Type="Decimal" Precision="38" Scale="0" />
+    <NavigationProperty Name="PJ_COMP1" Relationship="Self.UC00038367_START_FK" FromRole="PJ_COMP" ToRole="PJ_COMP1" />
+    <NavigationProperty Name="PJ_COMP2" Relationship="Self.UC00038367_START_FK" FromRole="PJ_COMP1" ToRole="PJ_COMP" />
+    <NavigationProperty Name="PJ_COMP11" Relationship="Self.UC00038368_END_FK" FromRole="PJ_COMP" ToRole="PJ_COMP1" />
+    <NavigationProperty Name="PJ_COMP3" Relationship="Self.UC00038368_END_FK" FromRole="PJ_COMP1" ToRole="PJ_COMP" />
+  </EntityType>
+  <EntityType Name="PJ_CUSTOMER">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="OBJECT_ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="PART_OF_OBJECT_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="STATE_ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="START_DATE" Type="DateTime" />
+    <Property Name="START_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="START_REQ_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="END_DATE" Type="DateTime" />
+    <Property Name="END_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="END_REQ_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_DATE" Type="DateTime" Nullable="false" />
+    <Property Name="CREATE_APPL_USER_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="CREATE_APPL_USER_LBL" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_SYS_USER" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_USER_HOST" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_USER_IP_ADDR" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_OS_USER" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_UPDATE_DATE" Type="DateTime" Nullable="false" />
+    <Property Name="LAST_UPDATE_APPL_USER_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="LAST_UPDATE_APPL_USER_LBL" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_UPDATE_SYS_USER" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_UPDATE_USER_HOST" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_UPDATE_USER_IP_ADDR" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_UPDATE_OS_USER" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="LBL" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="NAME" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="SHORT_NAME" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="PART_OF_ID" Type="Decimal" Precision="38" Scale="0" />
+    <NavigationProperty Name="PJ_CUSTOMER1" Relationship="Self.UC00038384_START_FK" FromRole="PJ_CUSTOMER" ToRole="PJ_CUSTOMER1" />
+    <NavigationProperty Name="PJ_CUSTOMER2" Relationship="Self.UC00038384_START_FK" FromRole="PJ_CUSTOMER1" ToRole="PJ_CUSTOMER" />
+    <NavigationProperty Name="PJ_CUSTOMER11" Relationship="Self.UC00038385_END_FK" FromRole="PJ_CUSTOMER" ToRole="PJ_CUSTOMER1" />
+    <NavigationProperty Name="PJ_CUSTOMER3" Relationship="Self.UC00038385_END_FK" FromRole="PJ_CUSTOMER1" ToRole="PJ_CUSTOMER" />
+  </EntityType>
+  <EntityType Name="PJ_EMP">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="OBJECT_ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="PART_OF_OBJECT_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="STATE_ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="START_DATE" Type="DateTime" />
+    <Property Name="START_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="START_REQ_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="END_DATE" Type="DateTime" />
+    <Property Name="END_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="END_REQ_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_DATE" Type="DateTime" Nullable="false" />
+    <Property Name="CREATE_APPL_USER_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="CREATE_APPL_USER_LBL" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_SYS_USER" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_USER_HOST" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_USER_IP_ADDR" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_OS_USER" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_UPDATE_DATE" Type="DateTime" Nullable="false" />
+    <Property Name="LAST_UPDATE_APPL_USER_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="LAST_UPDATE_APPL_USER_LBL" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_UPDATE_SYS_USER" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_UPDATE_USER_HOST" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_UPDATE_USER_IP_ADDR" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_UPDATE_OS_USER" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="LBL" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="ORG_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="LAST_NAME" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="FIRST_NAME" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="MID_NAME" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="E_MAIL" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="NOTE" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="BIRTHDAY" Type="DateTime" />
+    <Property Name="ACTUAL" Type="Decimal" Precision="38" Scale="0" />
+    <NavigationProperty Name="PJ_EMP1" Relationship="Self.UC00038222_START_FK" FromRole="PJ_EMP" ToRole="PJ_EMP1" />
+    <NavigationProperty Name="PJ_EMP2" Relationship="Self.UC00038222_START_FK" FromRole="PJ_EMP1" ToRole="PJ_EMP" />
+    <NavigationProperty Name="PJ_EMP11" Relationship="Self.UC00038223_END_FK" FromRole="PJ_EMP" ToRole="PJ_EMP1" />
+    <NavigationProperty Name="PJ_EMP3" Relationship="Self.UC00038223_END_FK" FromRole="PJ_EMP1" ToRole="PJ_EMP" />
+  </EntityType>
+  <EntityType Name="PJ_PROJECT">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="OBJECT_ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="PART_OF_OBJECT_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="STATE_ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="START_DATE_FACT" Type="DateTime" />
+    <Property Name="START_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="START_REQ_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="END_DATE_FACT" Type="DateTime" />
+    <Property Name="END_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="END_REQ_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_DATE" Type="DateTime" Nullable="false" />
+    <Property Name="CREATE_APPL_USER_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="CREATE_APPL_USER_LBL" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_SYS_USER" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_USER_HOST" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_USER_IP_ADDR" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_OS_USER" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_UPDATE_DATE" Type="DateTime" Nullable="false" />
+    <Property Name="LAST_UPDATE_APPL_USER_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="LAST_UPDATE_APPL_USER_LBL" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_UPDATE_SYS_USER" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_UPDATE_USER_HOST" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_UPDATE_USER_IP_ADDR" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_UPDATE_OS_USER" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="LBL" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="CLASS_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="CUST_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="NAME" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="SHORT_NAME" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="MAN_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="NOTE" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="WORK_DAYS_FACT" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="PART_OF_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="START_DATE" Type="DateTime" />
+    <Property Name="END_DATE" Type="DateTime" />
+    <Property Name="STATE_CL_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="START_DATE_PLAN" Type="DateTime" />
+    <Property Name="END_DATE_PLAN" Type="DateTime" />
+    <Property Name="WORK_DAYS_PLAN" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="HAS_CHILDREN" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="DURATION_PLAN" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="DURATION_FACT" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="AUTHOR_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="TASK_EXEC_LAST_DATE" Type="DateTime" />
+    <NavigationProperty Name="PJ_PROJECT1" Relationship="Self.UC00038352_START_FK" FromRole="PJ_PROJECT" ToRole="PJ_PROJECT1" />
+    <NavigationProperty Name="PJ_PROJECT2" Relationship="Self.UC00038352_START_FK" FromRole="PJ_PROJECT1" ToRole="PJ_PROJECT" />
+    <NavigationProperty Name="PJ_PROJECT11" Relationship="Self.UC00038353_END_FK" FromRole="PJ_PROJECT" ToRole="PJ_PROJECT1" />
+    <NavigationProperty Name="PJ_PROJECT3" Relationship="Self.UC00038353_END_FK" FromRole="PJ_PROJECT1" ToRole="PJ_PROJECT" />
+  </EntityType>
+  <EntityType Name="PJ_PROJECT_STATE_CL">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="OBJECT_ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="PART_OF_OBJECT_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="STATE_ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="START_DATE" Type="DateTime" />
+    <Property Name="START_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="START_REQ_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="END_DATE" Type="DateTime" />
+    <Property Name="END_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="END_REQ_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_DATE" Type="DateTime" Nullable="false" />
+    <Property Name="CREATE_APPL_USER_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="CREATE_APPL_USER_LBL" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_SYS_USER" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_USER_HOST" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_USER_IP_ADDR" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_OS_USER" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_UPDATE_DATE" Type="DateTime" Nullable="false" />
+    <Property Name="LAST_UPDATE_APPL_USER_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="LAST_UPDATE_APPL_USER_LBL" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_UPDATE_SYS_USER" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_UPDATE_USER_HOST" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_UPDATE_USER_IP_ADDR" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_UPDATE_OS_USER" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="LBL" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="NAME" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="CODE" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="NOTE" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="PJ_PROJECT_STATE_CL1" Relationship="Self.UC00038463_START_FK" FromRole="PJ_PROJECT_STATE_CL" ToRole="PJ_PROJECT_STATE_CL1" />
+    <NavigationProperty Name="PJ_PROJECT_STATE_CL2" Relationship="Self.UC00038463_START_FK" FromRole="PJ_PROJECT_STATE_CL1" ToRole="PJ_PROJECT_STATE_CL" />
+    <NavigationProperty Name="PJ_PROJECT_STATE_CL11" Relationship="Self.UC00038464_END_FK" FromRole="PJ_PROJECT_STATE_CL" ToRole="PJ_PROJECT_STATE_CL1" />
+    <NavigationProperty Name="PJ_PROJECT_STATE_CL3" Relationship="Self.UC00038464_END_FK" FromRole="PJ_PROJECT_STATE_CL1" ToRole="PJ_PROJECT_STATE_CL" />
+  </EntityType>
+  <EntityType Name="PJ_TASK">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="OBJECT_ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="PART_OF_OBJECT_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="STATE_ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="START_DATE" Type="DateTime" />
+    <Property Name="START_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="START_REQ_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="END_DATE" Type="DateTime" />
+    <Property Name="END_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="END_REQ_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_DATE" Type="DateTime" Nullable="false" />
+    <Property Name="CREATE_APPL_USER_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="CREATE_APPL_USER_LBL" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_SYS_USER" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_USER_HOST" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_USER_IP_ADDR" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_OS_USER" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_UPDATE_DATE" Type="DateTime" Nullable="false" />
+    <Property Name="LAST_UPDATE_APPL_USER_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="LAST_UPDATE_APPL_USER_LBL" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_UPDATE_SYS_USER" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_UPDATE_USER_HOST" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_UPDATE_USER_IP_ADDR" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_UPDATE_OS_USER" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="LBL" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="NAME" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="PJ_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="EXEC_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="END_DATE_PLAN" Type="DateTime" />
+    <Property Name="START_DATE_FACT" Type="DateTime" />
+    <Property Name="END_DATE_FACT" Type="DateTime" />
+    <Property Name="STATE_CL_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="WORK_HOURS_FACT" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="NOTE" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="WORK_HOURS_PLAN" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="PART_OF_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="EXEC_COMP_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="IS_EXEC_MANAGER" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="START_DATE_PLAN" Type="DateTime" />
+    <Property Name="CODE" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="RESOURCE_MAN_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="HAS_CHILDREN" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="DURATION_PLAN" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="DURATION_FACT" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="AUTHOR_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="ACCEPT_DATE_FACT" Type="DateTime" />
+    <Property Name="TASK_EXEC_LAST_DATE" Type="DateTime" />
+    <Property Name="REJECT_NOTES" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="CUSTOM_CODE" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="ORDER_NUM" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="INTERRUPTION_DATE" Type="DateTime" />
+    <Property Name="STATE_NOTES" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="PJ_TASK1" Relationship="Self.UC00038581_START_FK" FromRole="PJ_TASK" ToRole="PJ_TASK1" />
+    <NavigationProperty Name="PJ_TASK2" Relationship="Self.UC00038581_START_FK" FromRole="PJ_TASK1" ToRole="PJ_TASK" />
+    <NavigationProperty Name="PJ_TASK11" Relationship="Self.UC00038582_END_FK" FromRole="PJ_TASK" ToRole="PJ_TASK1" />
+    <NavigationProperty Name="PJ_TASK3" Relationship="Self.UC00038582_END_FK" FromRole="PJ_TASK1" ToRole="PJ_TASK" />
+  </EntityType>
+  <EntityType Name="PJ_TASK_CLASS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="OBJECT_ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="PART_OF_OBJECT_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="STATE_ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="START_DATE" Type="DateTime" />
+    <Property Name="START_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="START_REQ_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="END_DATE" Type="DateTime" />
+    <Property Name="END_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="END_REQ_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_DATE" Type="DateTime" Nullable="false" />
+    <Property Name="CREATE_APPL_USER_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="CREATE_APPL_USER_LBL" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_SYS_USER" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_USER_HOST" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_USER_IP_ADDR" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_OS_USER" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_UPDATE_DATE" Type="DateTime" Nullable="false" />
+    <Property Name="LAST_UPDATE_APPL_USER_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="LAST_UPDATE_APPL_USER_LBL" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_UPDATE_SYS_USER" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_UPDATE_USER_HOST" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_UPDATE_USER_IP_ADDR" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_UPDATE_OS_USER" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="LBL" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="NAME" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="DESCR" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="PARENT_ID" Type="Decimal" Precision="38" Scale="0" />
+  </EntityType>
+  <EntityType Name="PJ_TASK_COMP">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="OBJECT_ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="PART_OF_OBJECT_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="STATE_ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="START_DATE" Type="DateTime" />
+    <Property Name="START_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="START_REQ_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="END_DATE" Type="DateTime" />
+    <Property Name="END_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="END_REQ_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_DATE" Type="DateTime" Nullable="false" />
+    <Property Name="CREATE_APPL_USER_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="CREATE_APPL_USER_LBL" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_SYS_USER" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_USER_HOST" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_USER_IP_ADDR" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_OS_USER" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_UPDATE_DATE" Type="DateTime" Nullable="false" />
+    <Property Name="LAST_UPDATE_APPL_USER_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="LAST_UPDATE_APPL_USER_LBL" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_UPDATE_SYS_USER" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_UPDATE_USER_HOST" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_UPDATE_USER_IP_ADDR" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_UPDATE_OS_USER" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="LBL" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="TASK_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="CLASS_ID" Type="Decimal" Precision="38" Scale="0" />
+  </EntityType>
+  <EntityType Name="PJ_TASK_DEPENDENCY">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="OBJECT_ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="PART_OF_OBJECT_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="STATE_ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="START_DATE" Type="DateTime" />
+    <Property Name="START_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="START_REQ_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="END_DATE" Type="DateTime" />
+    <Property Name="END_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="END_REQ_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_DATE" Type="DateTime" Nullable="false" />
+    <Property Name="CREATE_APPL_USER_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="CREATE_APPL_USER_LBL" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_SYS_USER" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_USER_HOST" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_USER_IP_ADDR" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_OS_USER" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_UPDATE_DATE" Type="DateTime" Nullable="false" />
+    <Property Name="LAST_UPDATE_APPL_USER_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="LAST_UPDATE_APPL_USER_LBL" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_UPDATE_SYS_USER" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_UPDATE_USER_HOST" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_UPDATE_USER_IP_ADDR" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_UPDATE_OS_USER" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="LBL" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="PRED_TASK_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="NEXT_TASK_ID" Type="Decimal" Precision="38" Scale="0" />
+  </EntityType>
+  <EntityType Name="PJ_TASK_STATE_CL">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="OBJECT_ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="PART_OF_OBJECT_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="STATE_ID" Type="Decimal" Precision="38" Scale="0" Nullable="false" />
+    <Property Name="START_DATE" Type="DateTime" />
+    <Property Name="START_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="START_REQ_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="END_DATE" Type="DateTime" />
+    <Property Name="END_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="END_REQ_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="DESCRIPTION" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_DATE" Type="DateTime" Nullable="false" />
+    <Property Name="CREATE_APPL_USER_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="CREATE_APPL_USER_LBL" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_SYS_USER" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_USER_HOST" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_USER_IP_ADDR" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="CREATE_OS_USER" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_UPDATE_DATE" Type="DateTime" Nullable="false" />
+    <Property Name="LAST_UPDATE_APPL_USER_ID" Type="Decimal" Precision="38" Scale="0" />
+    <Property Name="LAST_UPDATE_APPL_USER_LBL" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_UPDATE_SYS_USER" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_UPDATE_USER_HOST" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_UPDATE_USER_IP_ADDR" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="LAST_UPDATE_OS_USER" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="LBL" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="NAME" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="CODE" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="NOTE" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="COLOR" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <Property Name="TOOLTIP" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="PJ_TASK_STATE_CL1" Relationship="Self.UC00038406_START_FK" FromRole="PJ_TASK_STATE_CL" ToRole="PJ_TASK_STATE_CL1" />
+    <NavigationProperty Name="PJ_TASK_STATE_CL2" Relationship="Self.UC00038406_START_FK" FromRole="PJ_TASK_STATE_CL1" ToRole="PJ_TASK_STATE_CL" />
+    <NavigationProperty Name="PJ_TASK_STATE_CL11" Relationship="Self.UC00038407_END_FK" FromRole="PJ_TASK_STATE_CL" ToRole="PJ_TASK_STATE_CL1" />
+    <NavigationProperty Name="PJ_TASK_STATE_CL3" Relationship="Self.UC00038407_END_FK" FromRole="PJ_TASK_STATE_CL1" ToRole="PJ_TASK_STATE_CL" />
+  </EntityType>
+  <Association Name="UC00038399_START_FK">
+    <End Role="PJ_CLASS" Type="Self.PJ_CLASS" Multiplicity="0..1" />
+    <End Role="PJ_CLASS1" Type="Self.PJ_CLASS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PJ_CLASS">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PJ_CLASS1">
+        <PropertyRef Name="START_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="UC00038400_END_FK">
+    <End Role="PJ_CLASS" Type="Self.PJ_CLASS" Multiplicity="0..1" />
+    <End Role="PJ_CLASS1" Type="Self.PJ_CLASS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PJ_CLASS">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PJ_CLASS1">
+        <PropertyRef Name="END_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="UC00038367_START_FK">
+    <End Role="PJ_COMP" Type="Self.PJ_COMP" Multiplicity="0..1" />
+    <End Role="PJ_COMP1" Type="Self.PJ_COMP" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PJ_COMP">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PJ_COMP1">
+        <PropertyRef Name="START_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="UC00038368_END_FK">
+    <End Role="PJ_COMP" Type="Self.PJ_COMP" Multiplicity="0..1" />
+    <End Role="PJ_COMP1" Type="Self.PJ_COMP" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PJ_COMP">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PJ_COMP1">
+        <PropertyRef Name="END_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="UC00038384_START_FK">
+    <End Role="PJ_CUSTOMER" Type="Self.PJ_CUSTOMER" Multiplicity="0..1" />
+    <End Role="PJ_CUSTOMER1" Type="Self.PJ_CUSTOMER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PJ_CUSTOMER">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PJ_CUSTOMER1">
+        <PropertyRef Name="START_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="UC00038385_END_FK">
+    <End Role="PJ_CUSTOMER" Type="Self.PJ_CUSTOMER" Multiplicity="0..1" />
+    <End Role="PJ_CUSTOMER1" Type="Self.PJ_CUSTOMER" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PJ_CUSTOMER">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PJ_CUSTOMER1">
+        <PropertyRef Name="END_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="UC00038222_START_FK">
+    <End Role="PJ_EMP" Type="Self.PJ_EMP" Multiplicity="0..1" />
+    <End Role="PJ_EMP1" Type="Self.PJ_EMP" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PJ_EMP">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PJ_EMP1">
+        <PropertyRef Name="START_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="UC00038223_END_FK">
+    <End Role="PJ_EMP" Type="Self.PJ_EMP" Multiplicity="0..1" />
+    <End Role="PJ_EMP1" Type="Self.PJ_EMP" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PJ_EMP">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PJ_EMP1">
+        <PropertyRef Name="END_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="UC00038352_START_FK">
+    <End Role="PJ_PROJECT" Type="Self.PJ_PROJECT" Multiplicity="0..1" />
+    <End Role="PJ_PROJECT1" Type="Self.PJ_PROJECT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PJ_PROJECT">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PJ_PROJECT1">
+        <PropertyRef Name="START_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="UC00038353_END_FK">
+    <End Role="PJ_PROJECT" Type="Self.PJ_PROJECT" Multiplicity="0..1" />
+    <End Role="PJ_PROJECT1" Type="Self.PJ_PROJECT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PJ_PROJECT">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PJ_PROJECT1">
+        <PropertyRef Name="END_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="UC00038463_START_FK">
+    <End Role="PJ_PROJECT_STATE_CL" Type="Self.PJ_PROJECT_STATE_CL" Multiplicity="0..1" />
+    <End Role="PJ_PROJECT_STATE_CL1" Type="Self.PJ_PROJECT_STATE_CL" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PJ_PROJECT_STATE_CL">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PJ_PROJECT_STATE_CL1">
+        <PropertyRef Name="START_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="UC00038464_END_FK">
+    <End Role="PJ_PROJECT_STATE_CL" Type="Self.PJ_PROJECT_STATE_CL" Multiplicity="0..1" />
+    <End Role="PJ_PROJECT_STATE_CL1" Type="Self.PJ_PROJECT_STATE_CL" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PJ_PROJECT_STATE_CL">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PJ_PROJECT_STATE_CL1">
+        <PropertyRef Name="END_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="UC00038581_START_FK">
+    <End Role="PJ_TASK" Type="Self.PJ_TASK" Multiplicity="0..1" />
+    <End Role="PJ_TASK1" Type="Self.PJ_TASK" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PJ_TASK">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PJ_TASK1">
+        <PropertyRef Name="START_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="UC00038582_END_FK">
+    <End Role="PJ_TASK" Type="Self.PJ_TASK" Multiplicity="0..1" />
+    <End Role="PJ_TASK1" Type="Self.PJ_TASK" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PJ_TASK">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PJ_TASK1">
+        <PropertyRef Name="END_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="UC00038406_START_FK">
+    <End Role="PJ_TASK_STATE_CL" Type="Self.PJ_TASK_STATE_CL" Multiplicity="0..1" />
+    <End Role="PJ_TASK_STATE_CL1" Type="Self.PJ_TASK_STATE_CL" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PJ_TASK_STATE_CL">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PJ_TASK_STATE_CL1">
+        <PropertyRef Name="START_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="UC00038407_END_FK">
+    <End Role="PJ_TASK_STATE_CL" Type="Self.PJ_TASK_STATE_CL" Multiplicity="0..1" />
+    <End Role="PJ_TASK_STATE_CL1" Type="Self.PJ_TASK_STATE_CL" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PJ_TASK_STATE_CL">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PJ_TASK_STATE_CL1">
+        <PropertyRef Name="END_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ProjectManagerEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="PJ_CLASS" EntityType="Self.PJ_CLASS" />
+    <EntitySet Name="PJ_COMP" EntityType="Self.PJ_COMP" />
+    <EntitySet Name="PJ_CUSTOMER" EntityType="Self.PJ_CUSTOMER" />
+    <EntitySet Name="PJ_EMP" EntityType="Self.PJ_EMP" />
+    <EntitySet Name="PJ_PROJECT" EntityType="Self.PJ_PROJECT" />
+    <EntitySet Name="PJ_PROJECT_STATE_CL" EntityType="Self.PJ_PROJECT_STATE_CL" />
+    <EntitySet Name="PJ_TASK" EntityType="Self.PJ_TASK" />
+    <EntitySet Name="PJ_TASK_CLASS" EntityType="Self.PJ_TASK_CLASS" />
+    <EntitySet Name="PJ_TASK_COMP" EntityType="Self.PJ_TASK_COMP" />
+    <EntitySet Name="PJ_TASK_DEPENDENCY" EntityType="Self.PJ_TASK_DEPENDENCY" />
+    <EntitySet Name="PJ_TASK_STATE_CL" EntityType="Self.PJ_TASK_STATE_CL" />
+    <AssociationSet Name="UC00038399_START_FK" Association="Self.UC00038399_START_FK">
+      <End Role="PJ_CLASS" EntitySet="PJ_CLASS" />
+      <End Role="PJ_CLASS1" EntitySet="PJ_CLASS" />
+    </AssociationSet>
+    <AssociationSet Name="UC00038400_END_FK" Association="Self.UC00038400_END_FK">
+      <End Role="PJ_CLASS" EntitySet="PJ_CLASS" />
+      <End Role="PJ_CLASS1" EntitySet="PJ_CLASS" />
+    </AssociationSet>
+    <AssociationSet Name="UC00038367_START_FK" Association="Self.UC00038367_START_FK">
+      <End Role="PJ_COMP" EntitySet="PJ_COMP" />
+      <End Role="PJ_COMP1" EntitySet="PJ_COMP" />
+    </AssociationSet>
+    <AssociationSet Name="UC00038368_END_FK" Association="Self.UC00038368_END_FK">
+      <End Role="PJ_COMP" EntitySet="PJ_COMP" />
+      <End Role="PJ_COMP1" EntitySet="PJ_COMP" />
+    </AssociationSet>
+    <AssociationSet Name="UC00038384_START_FK" Association="Self.UC00038384_START_FK">
+      <End Role="PJ_CUSTOMER" EntitySet="PJ_CUSTOMER" />
+      <End Role="PJ_CUSTOMER1" EntitySet="PJ_CUSTOMER" />
+    </AssociationSet>
+    <AssociationSet Name="UC00038385_END_FK" Association="Self.UC00038385_END_FK">
+      <End Role="PJ_CUSTOMER" EntitySet="PJ_CUSTOMER" />
+      <End Role="PJ_CUSTOMER1" EntitySet="PJ_CUSTOMER" />
+    </AssociationSet>
+    <AssociationSet Name="UC00038222_START_FK" Association="Self.UC00038222_START_FK">
+      <End Role="PJ_EMP" EntitySet="PJ_EMP" />
+      <End Role="PJ_EMP1" EntitySet="PJ_EMP" />
+    </AssociationSet>
+    <AssociationSet Name="UC00038223_END_FK" Association="Self.UC00038223_END_FK">
+      <End Role="PJ_EMP" EntitySet="PJ_EMP" />
+      <End Role="PJ_EMP1" EntitySet="PJ_EMP" />
+    </AssociationSet>
+    <AssociationSet Name="UC00038352_START_FK" Association="Self.UC00038352_START_FK">
+      <End Role="PJ_PROJECT" EntitySet="PJ_PROJECT" />
+      <End Role="PJ_PROJECT1" EntitySet="PJ_PROJECT" />
+    </AssociationSet>
+    <AssociationSet Name="UC00038353_END_FK" Association="Self.UC00038353_END_FK">
+      <End Role="PJ_PROJECT" EntitySet="PJ_PROJECT" />
+      <End Role="PJ_PROJECT1" EntitySet="PJ_PROJECT" />
+    </AssociationSet>
+    <AssociationSet Name="UC00038463_START_FK" Association="Self.UC00038463_START_FK">
+      <End Role="PJ_PROJECT_STATE_CL" EntitySet="PJ_PROJECT_STATE_CL" />
+      <End Role="PJ_PROJECT_STATE_CL1" EntitySet="PJ_PROJECT_STATE_CL" />
+    </AssociationSet>
+    <AssociationSet Name="UC00038464_END_FK" Association="Self.UC00038464_END_FK">
+      <End Role="PJ_PROJECT_STATE_CL" EntitySet="PJ_PROJECT_STATE_CL" />
+      <End Role="PJ_PROJECT_STATE_CL1" EntitySet="PJ_PROJECT_STATE_CL" />
+    </AssociationSet>
+    <AssociationSet Name="UC00038581_START_FK" Association="Self.UC00038581_START_FK">
+      <End Role="PJ_TASK" EntitySet="PJ_TASK" />
+      <End Role="PJ_TASK1" EntitySet="PJ_TASK" />
+    </AssociationSet>
+    <AssociationSet Name="UC00038582_END_FK" Association="Self.UC00038582_END_FK">
+      <End Role="PJ_TASK" EntitySet="PJ_TASK" />
+      <End Role="PJ_TASK1" EntitySet="PJ_TASK" />
+    </AssociationSet>
+    <AssociationSet Name="UC00038406_START_FK" Association="Self.UC00038406_START_FK">
+      <End Role="PJ_TASK_STATE_CL" EntitySet="PJ_TASK_STATE_CL" />
+      <End Role="PJ_TASK_STATE_CL1" EntitySet="PJ_TASK_STATE_CL" />
+    </AssociationSet>
+    <AssociationSet Name="UC00038407_END_FK" Association="Self.UC00038407_END_FK">
+      <End Role="PJ_TASK_STATE_CL" EntitySet="PJ_TASK_STATE_CL" />
+      <End Role="PJ_TASK_STATE_CL1" EntitySet="PJ_TASK_STATE_CL" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
